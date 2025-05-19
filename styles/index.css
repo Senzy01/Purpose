@@ -45,6 +45,11 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 nav a {
@@ -161,8 +166,10 @@ footer {
   nav ul {
     flex-direction: column;
     gap: 0.8rem;
-    width: 100%;
-    margin-top: 1rem;
+  }
+
+   nav a {
+    font-size: 0.9rem;
   }
 
  .hero-content h2 {
@@ -200,6 +207,10 @@ footer {
 
   nav ul {
     gap: 0.6rem;
+  }
+
+   nav a {
+    font-size: 0.8rem;
   }
 
 .hero {
