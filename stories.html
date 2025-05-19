@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>What's My Purpose? - Stories</title>
+  <link rel="stylesheet" href="styles/stories.css" />
+<!-- Your main JS -->
+<script type="module" src="script/stories.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">My Purpose</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="stories.html" class="active">Stories</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="stories-list">
+    <h2>Open Mic Stories</h2>
+
+    <button id="addStoryBtn">Add Your Story</button>
+
+    <div id="storyCardsContainer">
+      <!-- Example static story cards -->
+      <div class="story-card">
+        <p class="story-quote">"I found purpose in embracing the chaos and listening to my heart."</p>
+        <p class="story-author">— Sarah M.</p>
+      </div>
+
+      <div class="story-card">
+        <p class="story-quote">"Purpose isn’t a destination, it’s the courage to take the next step."</p>
+        <p class="story-author">— David L.</p>
+      </div>
+
+      <div class="story-card">
+        <p class="story-quote">"I thought I had to have it all figured out. Turns out, purpose is revealed one brave decision at a time."</p>
+        <p class="story-author">— Jason T.</p>
+      </div>
+
+      <div class="story-card">
+        <p class="story-quote">"After failing twice, I realized failure was just redirection. Now I’m doing what I love, and it feels right."</p>
+        <p class="story-author">— Adaobi E.</p>
+      </div>
+
+      <div class="story-card">
+        <p class="story-quote">"I used to think my pain disqualified me. Now I see it's the bridge to helping others."</p>
+        <p class="story-author">— Miracle A.</p>
+      </div>
+
+      <div class="story-card">
+        <p class="story-quote">"Purpose found me when I stopped pretending and started healing."</p>
+        <p class="story-author">— Tolu O.</p>
+      </div>
+
+      <div class="story-card">
+        <p class="story-quote">"Every time I shared my story, someone whispered 'me too.' That’s when I knew it mattered."</p>
+        <p class="story-author">— Ifeanyi C.</p>
+      </div>
+
+      <div class="story-card">
+        <p class="story-quote">"My purpose wasn’t hiding. I just needed the courage to admit what I truly wanted."</p>
+        <p class="story-author">— Esther M.</p>
+      </div>
+
+      <div class="story-card">
+        <p class="story-quote">"I didn’t find my purpose at the top — I found it when I got back up after the fall."</p>
+        <p class="story-author">— Dapo F.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Modal for adding story -->
+  <div id="modalOverlay">
+    <div id="modal">
+      <h3>Share Your Story</h3>
+      <textarea id="storyText" placeholder="Write your story here..."></textarea>
+      <input id="storyAuthor" type="text" placeholder="Your Name or Nickname" />
+      <button id="submitStoryBtn">Submit</button>
+      <button id="closeModalBtn" style="margin-left: 10px; background:#555; color:#fff;">Cancel</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 What's My Purpose — Made for the seekers, the feelers, and the fighters.</p>
+  </footer>
+
+</body>
+</html>

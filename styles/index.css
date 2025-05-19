@@ -1,0 +1,240 @@
+  /* Reset & Base */
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(120deg, #f8d49b 0%, #f3e2b8 100%);
+  color: #4a3f35;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+     color: #333;
+  }
+
+
+/* Header */
+header {
+  background: #222;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+nav {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.logo {
+  font-family: 'Georgia', serif;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  user-select: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+  color: #ffa500; /* orange highlight */
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  padding: 0 2rem;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-content h2 {
+  font-family: 'Georgia', serif;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  font-style: italic;
+  text-shadow: 1px 2px 3px rgba(0,0,0,0.1);
+}
+
+.cta {
+  background: #c25e00;
+  padding: 0.8rem 2rem;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(194,94,0,0.5);
+  transition: background 0.4s ease;
+  display: inline-block;
+}
+
+.cta:hover {
+  background: #ff9400;
+  box-shadow: 0 6px 15px rgba(255,148,0,0.7);
+}
+
+.intro, .expect {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.intro h3, .expect h3 {
+  font-family: 'Georgia', serif;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #784a00;
+}
+
+.intro p, .expect p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.expect ul {
+  list-style: disc inside;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+  color: #6a4c00;
+}
+
+.expect em {
+  font-size: 1.2rem;
+  color: #7d5900;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background: #252525;
+  color: #f5f5f5;
+  margin-top: auto;
+}
+
+/* Responsive for Tablets (<=768px) */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+ .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .cta {
+    font-size: 0.85rem;
+    padding: 0.6rem 1.5rem;
+  }
+
+  .intro h3, .expect h3 {
+    font-size: 1.7rem;
+  }
+
+  .intro p, .expect p {
+    font-size: 1rem;
+  }
+}
+
+
+/* Responsive for Mobile (<=480px) */
+@media (max-width: 480px) {
+  nav {
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    gap: 0.6rem;
+  }
+
+.hero {
+    height: 60vh; /* keep same height */
+    padding: 2rem 1rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .cta {
+    font-size: 0.8rem;
+    padding: 0.5rem 1.2rem;
+  }
+
+  .intro, .expect {
+    padding: 0 1rem;
+    margin: 2rem auto;
+  }
+
+  .intro h3, .expect h3 {
+    font-size: 1.5rem;
+  }
+
+  .expect ul {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 0.8rem;}
+
+}  
