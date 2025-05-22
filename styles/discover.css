@@ -41,9 +41,13 @@ nav {
 }
 
 nav ul {
-  list-style: none;
   display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
   gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav a {
@@ -181,6 +185,20 @@ footer {
 }
 
 @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+ nav ul {
+    gap: 2rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+  
   .hero-text h2 {
     font-size: 2.2rem;
   }
@@ -217,6 +235,22 @@ footer {
 }
 
 @media (max-width: 480px) {
+   nav {
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    gap: 1.8rem;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+  }
+  
   .hero-section {
     padding: 2rem 1rem;
   }
@@ -253,6 +287,10 @@ footer {
     font-size: 1.4rem;
   }
 
+   footer {
+    font-size: 0.8rem;
+    padding: 0.8rem;}
+
   #generateQuoteBtn {
     font-size: 0.9rem;
     padding: 0.6rem 1.1rem;
@@ -261,4 +299,5 @@ footer {
   #quoteDisplay {
     font-size: 1rem;
   }
+  
 }  
